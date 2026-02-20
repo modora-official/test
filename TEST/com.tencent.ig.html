@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG MOBILE - App Details</title>
+    <style>
+        :root {
+            --os-bg: #f3f4f6;
+            --window-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .os-window {
+            background: var(--window-bg);
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-bar {
+            background: #e5e7eb;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid #d1d5db;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .dot.red { background: #ff5f56; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #27c93f; }
+        .title-text {
+            flex: 1;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-right: 60px; /* Balance the dots */
+        }
+        .content {
+            padding: 30px;
+            overflow-y: auto;
+        }
+        .app-header {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        .app-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            color: var(--text-main);
+        }
+        .app-info p {
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-muted);
+            white-space: pre-wrap;
+        }
+        .screenshots-container {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding-bottom: 15px;
+            scrollbar-width: thin;
+        }
+        .screenshots-container img {
+            height: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            object-fit: contain;
+            background: #000;
+        }
+        @media (max-width: 600px) {
+            .app-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .app-info h1 { font-size: 24px; }
+            .screenshots-container img { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="os-window">
+        <div class="title-bar">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <div class="title-text">App Store View</div>
+        </div>
+        <div class="content">
+            <div class="app-header">
+                <img src="https://play-lh.googleusercontent.com/zCSGnBtZk0Lmp1BAbyaZfLktDzHmC6oke67qzz3G1lBegAF2asyt5KzXOJ2PVdHDYkU" alt="App Icon" class="app-icon">
+                <div class="app-info">
+                    <h1>PUBG MOBILE</h1>
+                    <p>Choice of Over 1 Billion Players! Ultimate Battle Royale On Mobile！</p>
+                </div>
+            </div>
+            <h3 style="color: #1f2937;">Screenshots</h3>
+            <div class="screenshots-container">
+                <img src="https://play-lh.googleusercontent.com/zCSGnBtZk0Lmp1BAbyaZfLktDzHmC6oke67qzz3G1lBegAF2asyt5KzXOJ2PVdHDYkU=w240-h480" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/zCSGnBtZk0Lmp1BAbyaZfLktDzHmC6oke67qzz3G1lBegAF2asyt5KzXOJ2PVdHDYkU=s48" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/mw_NfsvKM8m6RPv8Fz2GQawCOsqWv010saMnc7zbWalMxuaA9IY8h7E0VMieLxSxAFB98NFeYqbFrXXq=w48-h16" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/BXDFoab_szR5vLYqzbWI2v77iNS8Y2LcpV7SfSd8J-LfJihCTjMxPPd7hKKBirimm_-hUz41eWr9ZkDWcsTrQA=w526-h296" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/6ERr-k-tHro7v_UY5cnsvCtbAvGzeCY2hCh9z6b7iIa7RYQ8UaU1UZoi2sYk350mZzUBD_DYl3FAvqEJlS0R=w526-h296" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/0hnGo87rxLez0mT2CDTEL6Dr0cWrim5u6ODTtbCNvaEO5mn9gpUnCHcy6tW60yURhhY_uvutCRaLbjewXDaEsQ=w526-h296" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/AEsXxaWRPOIgpLIjr51ACkaRE2ioCwNTcbJ31FR6B9GLCPnop_DEAVO7awaFFWUAk4PDEOhe6uM4zAGZjzDsog=w526-h296" alt="Screenshot">
+<img src="https://play-lh.googleusercontent.com/rlj6EXOWbX64gExG9SKRohC11RyP3TYFHbagUSVKMe9KqAtJ4P-qrM0g21tIoHDKNoSPCzPlTLspBxYhfMo5Gg=w526-h296" alt="Screenshot">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
