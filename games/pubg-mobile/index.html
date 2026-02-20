@@ -77,11 +77,10 @@
         .btn-mini:active { transform: scale(0.95); background: var(--search-bg); }
         .btn-mini i { font-size: 18px; color: var(--primary); }
 
-        .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 30px; }
-        .info-card { background: var(--bg-card); padding: 15px 10px; border-radius: 20px; border: 1px solid var(--card-border); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 5px; }
-        .info-card ion-icon { font-size: 22px; color: var(--text-muted); }
-        .info-val { font-size: 14px; font-weight: 800; color: var(--text-main); margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%;}
-        .info-lbl { font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+        /* MOD FEATURE GRID (NEW) */
+        .mod-feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 30px; }
+        .mod-feat-card { background: var(--bg-card); padding: 12px 15px; border-radius: 16px; border: 1px solid var(--card-border); display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700; color: var(--text-main); line-height: 1.3; }
+        .mod-feat-card i { color: var(--accent); font-size: 16px; flex-shrink: 0; }
 
         .section-head { font-size: 18px; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; letter-spacing: -0.3px; }
         .section-head ion-icon { color: var(--primary); font-size: 20px; }
@@ -95,11 +94,6 @@
         .content-box strong { color: var(--text-main); }
         .content-box p { margin-bottom: 10px; }
         .content-box p:last-child { margin-bottom: 0; }
-        
-        .mod-features { margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--border); }
-        .mod-features ul { list-style: none; padding-left: 0; }
-        .mod-features li { position: relative; padding-left: 24px; margin-bottom: 8px; font-weight: 500; color: var(--text-main); }
-        .mod-features li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; top: 2px; color: #10b981; font-size: 12px; }
 
         @media (min-width: 900px) { #mainView { max-width: 800px; } header { padding-left: 5%; padding-right: 5%; } }
     </style>
@@ -141,22 +135,23 @@
             </div>
         </div>
 
-        <div class="info-grid">
-            <div class="info-card">
-                <ion-icon name="information-circle"></ion-icon>
-                <div class="info-val" title="Bervariasi">Bervariasi</div>
-                <div class="info-lbl">Versi</div>
-            </div>
-            <div class="info-card">
-                <ion-icon name="logo-android"></ion-icon>
-                <div class="info-val">Bervariasi</div>
-                <div class="info-lbl">Android</div>
-            </div>
-            <div class="info-card">
-                <ion-icon name="calendar-clear"></ion-icon>
-                <div class="info-val">Feb 2026</div>
-                <div class="info-lbl">Update</div>
-            </div>
+        <div class="mod-feature-grid">
+            
+                <div class="mod-feat-card">
+                    <i class="fa-solid fa-circle-check"></i> <span>Unlimited Money</span>
+                </div>
+                <div class="mod-feat-card">
+                    <i class="fa-solid fa-circle-check"></i> <span>Unlimited Gems/Coins</span>
+                </div>
+                <div class="mod-feat-card">
+                    <i class="fa-solid fa-circle-check"></i> <span>One Hit Kill</span>
+                </div>
+                <div class="mod-feat-card">
+                    <i class="fa-solid fa-circle-check"></i> <span>Semua Karakter Terbuka</span>
+                </div>
+                <div class="mod-feat-card">
+                    <i class="fa-solid fa-circle-check"></i> <span>Menu Mod</span>
+                </div>
         </div>
 
         <div class="section-head"><ion-icon name="images"></ion-icon> Screenshots</div>
@@ -166,6 +161,12 @@
                 <img src="https://play-lh.googleusercontent.com/6ERr-k-tHro7v_UY5cnsvCtbAvGzeCY2hCh9z6b7iIa7RYQ8UaU1UZoi2sYk350mZzUBD_DYl3FAvqEJlS0R=s720" class="ss-img" alt="Screenshot" loading="lazy">
                 <img src="https://play-lh.googleusercontent.com/0hnGo87rxLez0mT2CDTEL6Dr0cWrim5u6ODTtbCNvaEO5mn9gpUnCHcy6tW60yURhhY_uvutCRaLbjewXDaEsQ=s720" class="ss-img" alt="Screenshot" loading="lazy">
                 <img src="https://play-lh.googleusercontent.com/AEsXxaWRPOIgpLIjr51ACkaRE2ioCwNTcbJ31FR6B9GLCPnop_DEAVO7awaFFWUAk4PDEOhe6uM4zAGZjzDsog=s720" class="ss-img" alt="Screenshot" loading="lazy">
+                <img src="https://play-lh.googleusercontent.com/rlj6EXOWbX64gExG9SKRohC11RyP3TYFHbagUSVKMe9KqAtJ4P-qrM0g21tIoHDKNoSPCzPlTLspBxYhfMo5Gg=s720" class="ss-img" alt="Screenshot" loading="lazy">
+                <img src="https://play-lh.googleusercontent.com/udvN5qTFXNASv4h3_9kiuYp3xeSCxgvi3bWLJEBigU5S6tX17pzxu2YR7zV-qWvOKvtwTZ5d7xFTe0K9ODKgDg=s720" class="ss-img" alt="Screenshot" loading="lazy">
+                <img src="https://play-lh.googleusercontent.com/HwXCetWRE9wbGs_BMKRjPb3TbjSDoUN10_nkb3cgwRdfyK8w21p_elQdQdmS8QFSQanR3f6v-OqlVQoRP0OoKg=s720" class="ss-img" alt="Screenshot" loading="lazy">
+                <img src="https://play-lh.googleusercontent.com/lF_6E3NULSlsaXztx1nDuwu4pJ2R7_kHzVUx05vy3D8wGRXayVBoIoVUiRuXn0yDzruDzh5peO0uZurXxZCISV0=s720" class="ss-img" alt="Screenshot" loading="lazy">
+                <img src="https://play-lh.googleusercontent.com/PscSct_35_TpWZUzAH-0aQoAszFQQ0dE56Ru0N5DNdfV4L690wrme4Wp-1R2G96fze7qAuc_hadTqHJSK3chS2o=s720" class="ss-img" alt="Screenshot" loading="lazy">
+                <img src="https://play-lh.googleusercontent.com/wp14ly-t1jE7wX-847PYNOHvhlqF7eb24PAsJI9HrKxWNSPuEHslf4sziBsraJn-ILVf6iLI6LnLTe4rnyonCQ=s720" class="ss-img" alt="Screenshot" loading="lazy">
                 
             </div>
         </div>
@@ -182,15 +183,9 @@
             <p>PUBG MOBILE has many maps and gameplay mechanics that give you a thrilling survival experience. Find your friends and play the new modes together! Play however you like and fire at will!</p>
             
             <p>【Play anytime, anywhere】</p>
-            <p>Relax and play P...</p>
+            <p>Relax and play PUBG MOBILE to your heart's content! Enjoy the smoothest gunplay for an unparalleled gameplay experience.Feel the call of duty, move forward with courage, and lead your friends to victory</p>
             
-            <div class="mod-features">
-                <strong style="display:block; margin-bottom: 10px; color: var(--accent);">Fitur MOD:</strong>
-                <ul>
-                    <li>Premium Unlocked</li>
-<li>No Ads</li>
-                </ul>
-            </div>
+            <p>【Made especi...</p>
         </div>
     </div>
 
