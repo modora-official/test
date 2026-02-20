@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="dark light">
     <meta name="theme-color" content="#0f172a" id="metaThemeColor">
     
-    <title>Download Capcut Video Editor MOD APK - MODORA</title>
+    <title>Download Capcut Video Editor MOD APK V890 - MODORA</title>
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/modora-official/test@main/apps/Capcut Video Editor MOD APK/MODORA-Images.jpg" type="image/png">
 
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -67,9 +67,17 @@
         .app-dev { font-size: 14px; color: var(--primary); font-weight: 600; }
 
         .action-top-wrap { margin-bottom: 30px; display: flex; flex-direction: column; gap: 15px; }
-        .btn-download-huge { width: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); color: white; border: none; padding: 18px; border-radius: 20px; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4); transition: transform 0.2s, box-shadow 0.2s; }
+        .btn-download-huge { 
+            width: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); 
+            color: white; border: none; padding: 15px; border-radius: 20px; 
+            font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-direction: column;
+            cursor: pointer; box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4); transition: transform 0.2s, box-shadow 0.2s; 
+        }
         .btn-download-huge:active { transform: scale(0.97); box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4); }
+        .btn-download-huge .dl-icon-wrap { display: flex; align-items: center; gap: 10px; }
         .btn-download-huge i { font-size: 20px; animation: bounce 2s infinite; }
+        .btn-date { font-size: 11px; font-weight: 600; opacity: 0.85; margin-top: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+        
         @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-5px); } 60% { transform: translateY(-3px); } }
 
         .mini-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -108,18 +116,21 @@
     <div id="mainView">
         <div class="app-hero">
             <div class="app-icon-wrap">
-                <img src="https://cdn.jsdelivr.net/gh/modora-official/test@main/apps/Capcut Video Editor MOD APK/MODORA-Images.jpg" class="app-icon" alt="Capcut Video Editor MOD APK">
+                <img src="https://cdn.jsdelivr.net/gh/modora-official/test@main/apps/Capcut Video Editor MOD APK/MODORA-Images.jpg" class="app-icon" alt="Capcut Video Editor MOD APK V890">
                 <div class="mod-badge">MOD PREMIUM</div>
             </div>
             <div class="app-titles">
-                <h1 class="app-name">Capcut Video Editor MOD APK</h1>
+                <h1 class="app-name">Capcut Video Editor MOD APK V890</h1>
                 <div class="app-dev">Bytedance Pte. Ltd.</div>
             </div>
         </div>
 
         <div class="action-top-wrap">
-            <button class="btn-download-huge" onclick="startDownload(this)">
-                <i class="fa-solid fa-cloud-arrow-down"></i> Download APK (975 MB)
+            <button class="btn-download-huge" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.lemon.lvoverseas'">
+                <div class="dl-icon-wrap">
+                    <i class="fa-solid fa-cloud-arrow-down"></i> <span>Download APK (23 MB)</span>
+                </div>
+                <div class="btn-date">Update: 20 Februari 2026</div>
             </button>
             <div class="mini-actions">
                 <a href="../../tutorial.html" class="btn-mini">
@@ -136,21 +147,6 @@
 
         <div class="mod-feature-grid">
             
-                <div class="mod-feat-card">
-                    <i class="fa-solid fa-circle-check"></i> <span>Premium Unlocked</span>
-                </div>
-                <div class="mod-feat-card">
-                    <i class="fa-solid fa-circle-check"></i> <span>No Ads (Bebas Iklan)</span>
-                </div>
-                <div class="mod-feat-card">
-                    <i class="fa-solid fa-circle-check"></i> <span>Pro Features</span>
-                </div>
-                <div class="mod-feat-card">
-                    <i class="fa-solid fa-circle-check"></i> <span>Watermark Removed</span>
-                </div>
-                <div class="mod-feat-card">
-                    <i class="fa-solid fa-circle-check"></i> <span>VIP Unlocked</span>
-                </div>
                 <div class="mod-feat-card">
                     <i class="fa-solid fa-circle-check"></i> <span>Semua Filter Terbuka</span>
                 </div>
@@ -247,22 +243,6 @@
             if(localStorage.getItem('modora_eco') === 'true') {
                 document.documentElement.classList.add('eco-mode');
             }
-        }
-
-        function startDownload(btnElement) {
-            const originalText = btnElement.innerHTML;
-            btnElement.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Menyiapkan File...';
-            btnElement.style.opacity = '0.8';
-            btnElement.style.pointerEvents = 'none';
-
-            setTimeout(() => {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas";
-                setTimeout(() => {
-                    btnElement.innerHTML = originalText;
-                    btnElement.style.opacity = '1';
-                    btnElement.style.pointerEvents = 'auto';
-                }, 1000);
-            }, 2500);
         }
 
         window.addEventListener('DOMContentLoaded', () => {
