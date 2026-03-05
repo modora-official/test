@@ -108,16 +108,19 @@
         .content-box p { margin-bottom: 10px; }
         .content-box p:last-child { margin-bottom: 0; }
 
-        /* Lightbox CSS */
+        /* Lightbox CSS Diperbaiki */
         .lightbox { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); align-items: center; justify-content: center; flex-direction: column; opacity: 0; transition: opacity 0.3s; }
         .lightbox.show { display: flex; opacity: 1; }
-        .lightbox-content { max-width: 90%; max-height: 75vh; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .lightbox-content { max-width: 85vw; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .lightbox.show .lightbox-content { transform: scale(1); }
-        .close-lb { position: absolute; top: 25px; right: 25px; color: #fff; font-size: 35px; font-weight: bold; cursor: pointer; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; line-height: 0; transition: background 0.2s; }
+        
+        .close-lb { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 24px; cursor: pointer; width: 40px; height: 40px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 10001; }
         .close-lb:active { background: rgba(255,255,255,0.3); }
-        .prev-lb, .next-lb { cursor: pointer; position: absolute; top: 50%; width: 45px; height: 45px; margin-top: -22px; color: white; font-weight: bold; font-size: 20px; transition: 0.3s; user-select: none; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
+        
+        .prev-lb, .next-lb { cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); width: 45px; height: 45px; color: white; font-size: 20px; transition: 0.3s; user-select: none; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); z-index: 10001; }
         .prev-lb:active, .next-lb:active { background: rgba(255,255,255,0.4); }
-        .prev-lb { left: 15px; } .next-lb { right: 15px; }
+        .prev-lb { left: 10px; } 
+        .next-lb { right: 10px; }
 
         @media (min-width: 900px) { #mainView { max-width: 800px; } header { padding-left: 5%; padding-right: 5%; } }
     </style>
@@ -161,7 +164,7 @@
         </div>
 
         <div class="social-notice">
-            <p>🌟 Dapatkan Update & Request Game MOD Terbaru!</p>
+            <p>🚀 JOIN FOR UPDATES! Dapatkan info MOD terbaru & Request Game di sini.</p>
             <div class="social-links">
                 <a href="https://modora.com/whatsapp" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 <a href="https://modora.com/telegram" target="_blank" class="btn-tg"><i class="fa-brands fa-telegram"></i> Telegram</a>
@@ -169,7 +172,7 @@
         </div>
 
         <div class="mod-feature-grid">
-            <div class="mod-feat-card"><i class="fa-solid fa-circle-check"></i> <span>Watermark Removed</span></div>
+            <div class="mod-feat-card"><i class="fa-solid fa-circle-check"></i> <span>Premium Mod (Standard)</span></div>
         </div>
 
         <div class="section-head"><ion-icon name="images"></ion-icon> Screenshots</div>
@@ -211,10 +214,10 @@
     </div>
 
     <div id="lightbox" class="lightbox">
-        <span class="close-lb">&times;</span>
-        <span class="prev-lb">&#10094;</span>
+        <span class="close-lb"><i class="fa-solid fa-xmark"></i></span>
+        <span class="prev-lb"><i class="fa-solid fa-chevron-left"></i></span>
         <img class="lightbox-content" id="img-lb">
-        <span class="next-lb">&#10095;</span>
+        <span class="next-lb"><i class="fa-solid fa-chevron-right"></i></span>
     </div>
 
     <script>
